@@ -24,7 +24,7 @@ st.select_slider('Rating',['Bad','Average','Good','Excellent','Outstanding'])
 st.text_input("Suggessions Please!!")
 dob = st.date_input("Select your date of birth")#Select.... will be displayed asking for selecting date
 st.write(f"Your date of birth {dob}")#
-
+#Integrating Pandas with Streamlit 🎊💐🌞
 file=st.file_uploader("upload csv file",type="csv")
 
 
@@ -43,6 +43,7 @@ if file:
 
 
 st.balloons()
+
 
 
 
