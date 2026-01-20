@@ -15,9 +15,14 @@ chai = st.selectbox("Your fav chai: ", ["Masala chai", "Lemon Tea", "Adrak Chai"
 st.write(f"Your choose {chai}. Excellent choise")
 
 st.success("Your chai has been brewed")
+cups = st.number_input("How many cups", min_value=1, max_value=10, step=1)
+st.write(f"Selected sugar level {cups}")
 
 st.markdown('Please Share your Valuable feedback!!!')
 st.select_slider('Rating',['Bad','Average','Good','Excellent','Outstanding'])
 st.text_input("Suggessions Please!!")
+dob = st.date_input("Select your date of birth")
+st.write(f"Your date of birth {dob}")
 st.balloons()
+
 
