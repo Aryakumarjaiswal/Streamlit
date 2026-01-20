@@ -11,8 +11,13 @@ st.write(' MaitriAI is Startup that provides Technolgy based solution to their c
 st.warning('Please be socially responsible.')
 st.file_uploader("Choose an image...", type="jpg")
 st.chat_input('Your Message')
+chai = st.selectbox("Your fav chai: ", ["Masala chai", "Lemon Tea", "Adrak Chai", "Kesar Chai"])
+st.write(f"Your choose {chai}. Excellent choise")
+
+st.success("Your chai has been brewed")
 
 st.markdown('Please Share your Valuable feedback!!!')
 st.select_slider('Rating',['Bad','Average','Good','Excellent','Outstanding'])
 st.text_input("Suggessions Please!!")
 st.balloons()
+
