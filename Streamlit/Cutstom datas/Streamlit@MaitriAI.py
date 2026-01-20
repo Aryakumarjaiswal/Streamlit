@@ -64,8 +64,14 @@ if st.button("Convert"):
 st.balloons()
 
 
+#Let's say we i wanna take feedback in stars eg 4star /5 star ⭐ ⭐ ⭐ ⭐ ⭐ 
 
+#step 1: Create a dictionary 
+sentiment={"one","two","three","four","five"}
+select=st.feedback("stars")
+if select is not None: 
+  st.markdown("You've selected {sentiment[select]}")
+#Output:⭐⭐⭐☆☆
 
-
-
+#You have selectted three start
 
