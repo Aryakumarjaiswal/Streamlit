@@ -24,7 +24,26 @@ st.select_slider('Rating',['Bad','Average','Good','Excellent','Outstanding'])
 st.text_input("Suggessions Please!!")
 dob = st.date_input("Select your date of birth")#Select.... will be displayed asking for selecting date
 st.write(f"Your date of birth {dob}")#
+
+file=st.file_uploader("upload csv file",type="csv")
+
+
+if file:
+  import pandas as pd
+  df=pd.read_csv("csv ka address")
+  st.sub_header("Here's a preview of file")
+  st.dataframe(df)
+
+if file:
+  df=pd.read_csv("csv ka address")
+  st.sub_header("Here's a preview of file")
+  st.write(df.describe())
+  
+
+
+
 st.balloons()
+
 
 
 
