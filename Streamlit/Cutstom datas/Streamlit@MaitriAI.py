@@ -74,4 +74,20 @@ if select is not None:
 #Output:⭐⭐⭐☆☆
 
 #You have selectted three start
+import streamlit as st
+st.set_page_config(
+page_title="My App",
+page_icon="📊",
+layout="wide"
+)
+box = st.container(border=True)
+with box:
+    st.write("Inside container")
+    choice = st.pills(
+"Time range",
+["1M", "6M", "1Y"],
+default="6M"
+)
+
+
 
